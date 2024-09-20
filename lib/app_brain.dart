@@ -42,4 +42,17 @@ void nextQuestion(){
   bool getQuestionAnswer() {
     return _questionGroup[_questionNum].questionAnswer;
   }
+
+  bool isFinished(){
+    if (_questionNum >= _questionGroup.length -1 ){
+      return true;
+    }else {
+      return false;
+    }
+  }
+
+  void reset()
+  {
+    _questionNum =0;
+  }
 }
